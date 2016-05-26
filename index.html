@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html> 
+<head> </head> 
+
+<body> 
+	<p>Input the number of the new star:
+		<input type="text" name="nInputNewStar" id="InputNewStar" />
+		<input type="submit" name="nCalCost" id="sCalCost" onclick="CalCostExplorNewStar()" value="=" />
+		Output:<input type="text" name="nOutput" id="OutputNewStar" /> 
+	</p>
+	
+</body>
+<script type="text/javascript">
+	function CalCostExplorNewStar() { 
+		var numNewStar = parseInt(document.getElementById("InputNewStar").value);
+		var answer = 600 +numNewStar - 1 * 750+(numNewStar - 2)*(numNewStar - 1) * 300;
+		OutputNewStar.value=answer;
+	} 
+</script>
+</html>
